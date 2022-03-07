@@ -1092,6 +1092,30 @@ void single_list::display()
   
 ![image](https://user-images.githubusercontent.com/98379636/156984679-9fa8ac23-7235-4690-9f50-27cf3accf4cf.png)
   ![image](https://user-images.githubusercontent.com/98379636/156985197-2aa81db8-d8aa-4a3d-8106-1778dba735b2.png
+	![image](https://user-images.githubusercontent.com/98379636/156986219-58a8216f-db3d-4829-b4fa-68d11e65d659.png)
+	![image](https://user-images.githubusercontent.com/98379636/156986436-49535788-3e2e-42e8-b2d7-d64a3d3a80fb.png)
+	![image](https://user-images.githubusercontent.com/98379636/156986849-1b2f02e4-7036-4340-8299-a99a3e2a54f8.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987037-61df715e-6514-434b-98b1-4ad14572aa83.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987232-8dff16af-ebbf-4eb3-ba6c-dc25d25e9d0b.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987360-4155ee1c-abe4-4cd4-ae06-694d90451bdc.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987437-57a2d107-c55a-4e5d-93f8-fc190e7262d3.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987523-9b64f318-06cd-44ed-9e39-3fe6db8341fa.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987663-7042c120-5761-4fda-a449-e43a2c206963.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987785-f005ccf0-6843-44fb-9cda-31c7dc6d8b35.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987906-20201449-ef81-4193-8036-2f341d4e43fc.png)
+	![image](https://user-images.githubusercontent.com/98379636/156987984-3d36eb26-d744-47f5-90d6-a9a88c956c3d.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
