@@ -1168,6 +1168,61 @@ return 0;
 <br>
 	**output**
 	![image](https://user-images.githubusercontent.com/98379636/157167830-f2308df6-5d52-44cb-baac-3e98e923fd20.png)
+	
+	
+**minheap**
+	
+#include <conio.h>
+using namespace std;
+void min_heap(int *a, int m, int n){
+   int j, t;
+   t= a[m];
+   j = 2 * m;
+   while (j <= n) {
+      if (j < n && a[j+1] < a[j])
+         j = j + 1;
+      if (t < a[j])
+         break;
+      else if (t >= a[j]) {
+         a[j/2] = a[j];
+         j = 2 * j;
+      }
+   }
+   a[j/2] = t;
+   return;
+}
+void build_minheap(int *a, int n) {
+   int k;
+   for(k = n/2; k >= 1; k--) {
+      min_heap(a,k,n);
+   }
+}
+int main() {
+   int n, i;
+   cout<<"enter no of elements of array\n";
+   cin>>n;
+   int a[30];
+   for (i = 1; i <= n; i++) {
+      cout<<"enter element"<<" "<<(i)<<endl;
+      cin>>a[i];
+   }
+   build_minheap(a, n);
+   cout<<"Min Heap\n";
+   for (i = 1; i <= n; i++) {
+      cout<<a[i]<<endl;
+   }
+   getch();
+}
+<br>
+**output**
+	![image](https://user-images.githubusercontent.com/98379636/157168974-a0de1ace-8ca4-4983-ab29-85ce1cc89e67.png)
+
+	
+	
+		       
+
+	
+	
 
 	
 
