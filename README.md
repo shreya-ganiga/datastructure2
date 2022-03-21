@@ -1410,10 +1410,9 @@ int main() {
    }
    getch();
 }
-
 <br>
 	**output**
-	![image](https://user-images.githubusercontent.com/98379636/159210874-d67da3be-038e-44c5-939f-8de92ed6e265.png)
+![image](https://user-images.githubusercontent.com/98379636/159211180-c887f7b7-bbcd-4203-bbef-07d0246a0db6.png)
 
 	
 
