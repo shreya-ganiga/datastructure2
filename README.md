@@ -1301,8 +1301,7 @@ int main() {
 }
 <br>
 	**output**
-	![image](https://user-images.githubusercontent.com/98379636/157182852-d6a68d6b-9515-496e-ba04-008980ced
-
+![image](https://user-images.githubusercontent.com/98379636/159215929-abad70f3-8d24-457b-8baa-b0d918e1cef7.png)
 	
 	**minheap**
 	#include<iostream>
