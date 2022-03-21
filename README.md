@@ -1442,7 +1442,8 @@ void insert(int new_data)
 
 <br>
 	**output**
-	![image](https://user-images.githubusercontent.com/98379636/159212026-1d497473-c0f9-4d0b-a9ee-6a250a773152.png)
+	![image](https://user-images.githubusercontent.com/98379636/159219647-3b5a13ee-c1e5-49bd-8fb9-9a463d465e7d.png)
+
 	
 	**inorder traversal**
 	
