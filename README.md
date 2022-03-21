@@ -1301,71 +1301,8 @@ int main() {
 }
 <br>
 	**output**
-	![image](https://user-images.githubusercontent.com/98379636/157182852-d6a68d6b-9515-496e-ba04-008980ced5f9.png)
-	
-	**splitting**
-	
-using namespace std;
-void MaxHeapify (int a[], int i, int n)
-{
-int j, temp;
-temp = a[i];
-j =2i;
-while (j <= n)
-{
-if (j < n && a[j+1] > a[j])
-j = j+1;
-if (temp > a[j])
-break;
-else if (temp <= a[j])
-{
-a[j/2] = a[j];
-i = 2j;
-}
-}
-a[j/2] = temp;
-return;
-}
-void HeapSort(int a[], int n)
-{
-int i, temp;
-for (i = n; i >= 2; i--)
-{
-temp = a[i];
-a[i] = a[1];
-a[1] = temp;
-MaxHeapify(a, 1, i - 1);
-}
-}
-void Build_MaxHeap(int a[], int n)
-{
-int i;
-for(i = n/2; i >= 1; i--)
-MaxHeapify(a, i, n);
-}
-int main()
-{
-int n, i,arr[100];
-cout<<"\nEnter the number of data element to be sorted: ";
-cin>>n;
-n++;
-for(i=1;i<n;i++)
-{
-cout<<"Enter element"<<i<<":";
-cin>>arr[i];
-}
-Build_MaxHeap(arr, n-1);
-HeapSort(arr, n-1);
-cout<<"\nSorted Data ";
-for (i = 1; i < n; i++)
-cout<<" "<<arr[i];
-return 0;
-}
+	![image](https://user-images.githubusercontent.com/98379636/157182852-d6a68d6b-9515-496e-ba04-008980ced
 
-<br>
-	**output**
-	
-	![image](https://user-images.githubusercontent.com/98379636/157184165-20632450-4a53-42c8-8cd8-a753da210abe.png)
 	
 	**minheap**
 	#include<iostream>
@@ -1413,6 +1350,102 @@ int main() {
 <br>
 	**output**
 ![image](https://user-images.githubusercontent.com/98379636/159211180-c887f7b7-bbcd-4203-bbef-07d0246a0db6.png)
+	
+	
+	**splitting**
+	#include<iostream>
+using namespace std;
+struct Node
+{
+	int value;
+	struct Node *next;
+};
+struct Node* head=NULL;
+struct Node* sHead=NULL;
+struct Node* temp=NULL;
+void insert(int new_data)
+{
+	struct Node* new_node=new Node();
+	new_node->value=new_data;
+	new_node->next=head;
+	head=new_node;
+ }
+ int n;
+ int ele;
+ int splitIndex;
+ int main(){
+ 	int i;
+ 	cout<<"enter number of elements you want in the list\t";
+ 	cin>>n;
+ 	cout<<"enter elements:"<<endl;
+ 	for(i=0;i<n;i++){
+ 		cin>>ele;
+ 		insert(ele);
+	 }
+	 cout<<"\nlist of elements:"<<endl;
+	 Node *t;
+	 t=head;
+	 while(t!=NULL){
+	 
+	 	cout<<t->value<<"\t";
+	 	t=t->next;
+	 }
+	 cout<<"\n\nenter the position you want the list to split";
+	 cin>>splitIndex;
+	 while(splitIndex<0||splitIndex>n-1)
+	 {
+	 	cout<<"invalid position.try again."<<endl;
+	 	cin>>splitIndex;
+	 }
+	 temp=head;
+	 for(i=0;i<=splitIndex;i++)
+	 {
+	 	if(i==splitIndex-1)
+	 	{
+	 		Node* tN;
+	 		tN=temp->next;
+	 		sHead=tN;
+	 		temp->next=NULL;
+	 		break;
+		 }
+		 temp=temp->next;
+	 }
+	 temp=head;
+	 if(temp==NULL)
+	 {
+	 	cout<<"\nfirst list is empty"<<endl;
+	 }
+	 else
+	 {
+	 	cout<<"\n\nfirst list element"<<endl;
+	 	while(temp!=NULL)
+	 	{
+	 		cout<<temp->value<<"\t";
+	 		temp=temp->next;
+		 }
+	 }
+	 temp=sHead;
+	 if(temp==NULL)
+	 {
+	 	cout<<"\nsecond list is empty"<<endl;
+	 }
+	 else
+	 {
+	 	cout<<"\n\nsecond list elements"<<endl;
+	 	while(temp!=NULL)
+	 	{
+	 		cout<<temp->value<<"\t";
+	 		temp=temp->next;
+		 }
+	 }
+	 return 0;
+  } 
+
+<br>
+	**output**
+	![image](https://user-images.githubusercontent.com/98379636/159212026-1d497473-c0f9-4d0b-a9ee-6a250a773152.png)
+
+	
 
 	
 
