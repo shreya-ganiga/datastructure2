@@ -1499,6 +1499,51 @@ int main()
 <br>
 	**output**
 	![image](https://user-images.githubusercontent.com/98379636/159214798-98dc103c-5818-450c-8e6a-2e0ed4b4032b.png)
+	
+	
+	**.Write a C++ program to split the linked list into two halves such that the element ‘e’
+should be the first element of second list.**
+	
+#include&lt;iostream&gt;
+using namespace std;
+struct Node{
+int value;
+struct Node *next;
+};
+struct Node* head = NULL;
+struct Node* sHead = NULL;
+
+Thank Me Later
+
+struct Node* temp = NULL;
+void insert(int new_data){
+struct Node* new_node = new Node(); //(struct Node*)malloc(sizeof(struct Node));
+new_node-&gt;value = new_data;
+new_node-&gt;next = head;
+head = new_node;
+}
+int n;
+int ele;
+int splitIndex;
+int main(){
+int i;
+cout&lt;&lt;&quot;Enter number of elements you want in the list\t&quot;;
+cin&gt;&gt;n;
+cout&lt;&lt;&quot;Enter elements :&quot; &lt;&lt;endl;
+for(i=0;i&lt;n;i++){
+cin&gt;&gt;ele;
+insert(ele);
+}
+cout&lt;&lt;&quot;\nList of elements : &quot;&lt;&lt;endl;
+Node *t;
+t = head;
+while(t != NULL){
+cout&lt;&lt;t-&gt;value&lt;&lt;&quot;\t&quot;;
+t = t-&gt;next;
+}
+cout&lt;&lt;&quot;\n\nEnter the position you want the list to split &quot;;
+cin&gt;&gt;splitIndex;
+while(splitIndex &lt; 0 || splitIndex &gt; n-1){
 
 
 	
